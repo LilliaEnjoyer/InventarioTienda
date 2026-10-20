@@ -6,6 +6,8 @@ package github.com.lilliaenjoyer.programacioni.inventariotienda;
 
 import Conexion.Conexion;
 import java.sql.Connection;
+import model.Categoria;
+import model.Producto;
 
 /**
  *
@@ -14,8 +16,7 @@ import java.sql.Connection;
 public class InventarioTienda {
 
     public static void main(String[] args) {
-        Connection conexion = Conexion.getConexion();
-        
+        Connection conexion = Conexion.getConexion();  
     
     if (conexion != null) {
         System.out.println("Conexión exitosa");
@@ -29,6 +30,6 @@ public class InventarioTienda {
     } else {
         System.out.println("No se pudo conectar");
     }    
-        
+    
     }
 }
