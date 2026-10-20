@@ -10,11 +10,11 @@ package model;
  */
 public class Producto {
     private int idProducto;
-    private String producto;
+    private String nombre;
     private double precio;
     private int cantidad;
     private Categoria categoria;
-    private String nombre;
+
 
     public Producto() {
     }
@@ -31,10 +31,6 @@ public class Producto {
 
     public int getIdProducto() {
         return idProducto;
-    }
-
-    public String getProducto() {
-        return producto;
     }
 
     public double getPrecio() {
@@ -56,10 +52,6 @@ public class Producto {
 
     public void setIdProducto(int idProducto) {
         this.idProducto = idProducto;
-    }
-
-    public void setProducto(String producto) {
-        this.producto = producto;
     }
 
     public void setPrecio(double precio) {
